@@ -8,7 +8,7 @@ It was inspired by Snyk.io's [helm-snyk](https://github.com/snyk-labs/helm-snyk)
 Just like any helm plugin, use the `helm plugin` subcommand:
 
 ```bash
-helm plugin install  https://github.com/ObjectifLibre/helm-trivy
+helm plugin install  https://github.com/ovdii/helm-trivy
 ```
 
 Currently avalaible for linux and mac platforms.
