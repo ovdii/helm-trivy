@@ -74,8 +74,8 @@ func scanImage(image string, ctx context.Context, cli *client.Client, cacheDir s
 	} else {
 		config.Cmd = append(config.Cmd, "-q")
 	}
+        config.Cmd = append(config.Cmd, image)
 	config.Cmd = append(config.Cmd, strings.Fields(trivyOpts)...)
-	config.Cmd = append(config.Cmd, image)
 	resp, err := cli.ContainerCreate(ctx, &config, &container.HostConfig{
 		Binds: []string{cacheDir + ":/.cache"},
 	}, nil, "")
